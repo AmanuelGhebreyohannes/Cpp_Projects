@@ -1,6 +1,6 @@
 //double weight ;
-struct Point
-{
-    double m_x;
-    double m_y;
-};
+// struct Point
+// {
+//     double m_x;
+//     double m_y;
+// };
