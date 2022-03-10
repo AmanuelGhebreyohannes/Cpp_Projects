@@ -13,8 +13,8 @@ void enter_bar(unsigned int age)
 
 int main()
 {
-    // enter_bar(12);
-    // enter_bar(2);
+    enter_bar(12);
+    enter_bar(2);
 
     for(size_t i = 1; i<20;i++)
     {
@@ -22,5 +22,7 @@ int main()
 
     }
     std::cout << sizeof(size_t)<<std::endl;
+
+    
     return 0;
 }
