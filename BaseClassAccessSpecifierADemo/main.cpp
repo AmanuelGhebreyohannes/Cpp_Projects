@@ -1,6 +1,7 @@
 #include <iostream>
 #include "player.h"
 #include "nurse.h"
+#include "engineer.h"
 int main()
 {
     Person p1("Daniel Gray",65,"Blue Sky St 233 #56");
@@ -15,6 +16,12 @@ int main()
     Nurse nurse;
     nurse.treat_unwell_person();
     std::cout << "Nurse : "<<nurse << std::endl;
+
+    Engineer engineer1;
+    //engineer1.m_full_name = "John Snow";
+    engineer1.build_something();
+    std::cout<< "Engineer : "<< engineer1 << std::endl;
+
 
     return 0;
 }
