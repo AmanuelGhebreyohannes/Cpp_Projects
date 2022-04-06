@@ -9,7 +9,8 @@ class CivilEngineer : public Engineer{
     public:
         CivilEngineer();
         ~CivilEngineer();
-        
+        CivilEngineer(std::string_view fullname, int age , const std::string address,int contract_count, std::string_view speciality);
+
         void build_road(){
 
             add(10,20);

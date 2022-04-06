@@ -10,6 +10,8 @@ Person::Person(std::string_view fullname, int age , const std::string address)
     m_full_name = fullname;
     m_age = age;
     m_address = address;
+    std::cout << "Custom constructor for Person called ..."<<std::endl;
+
 }
 
 std::ostream& operator<<(std::ostream& out, const Person& person){
