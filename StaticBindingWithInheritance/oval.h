@@ -14,6 +14,13 @@ class Oval : public Shape{
             std::cout << "Oval::draw() called . Drawing " << m_description << " with m_x_radius : "<< m_x_radius << " and m_y_radius :"
                         << m_y_radius << std::endl;
         }
+    protected:
+        double get_x_rad() const{
+            return m_x_radius;
+        }
+        double get_y_rad() const{
+            return m_y_radius;
+        }
 
     private: 
         double m_x_radius;
