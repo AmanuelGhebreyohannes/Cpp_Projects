@@ -2,16 +2,17 @@
 #define SHAPE_H 
 
 #include <iostream>
+#include <string_view>
 #include <string>
 
 class Shape
 {
     public: 
         Shape() = default;
-        Shape(const std::string& description);
-        ~Shape()=default;
+        Shape(std::string_view description);
+        ~Shape();
         void draw()const{
-            std::cout<< "Shape::draw() called. Drawing "<< m_descritption<< std::endl;
+            std::cout<< "Shape::draw() called. Drawing "<< m_description<< std::endl;
         }
 
     protected:
