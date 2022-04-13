@@ -26,6 +26,16 @@ int main()
     shape_ptr->draw();
 
     //Base references
+
+    Shape& shape_ref = shape1;
+    shape_ref.draw();
+
+    shape_ref = oval1;
+    shape_ref.draw();
+
+    shape_ref = circle1;
+    shape_ref.draw();
+
     
 
     return 0;
