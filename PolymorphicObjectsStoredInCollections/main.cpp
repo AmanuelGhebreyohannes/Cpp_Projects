@@ -29,22 +29,22 @@ int main()
 
     // raw pointers
     //Shapes stored in collections
-    Shape* shape_collection[]={ &circle1, &oval1 , &circle2, &oval2, &circle3, &oval3};
+    // Shape* shape_collection[]={ &circle1, &oval1 , &circle2, &oval2, &circle3, &oval3};
 
-    for (Shape* ptr: shape_collection)
-    {
-        std::cout << " sizeof(*ptr)) : "<< sizeof(*ptr) << std::endl;
-        ptr->draw();
-    }
+    // for (Shape* ptr: shape_collection)
+    // {
+    //     std::cout << " sizeof(*ptr)) : "<< sizeof(*ptr) << std::endl;
+    //     ptr->draw();
+    // }
         
 
     //smart pointers
 
-    // std::shared_ptr<Shape> shapes4[]={std::make_shared<Circle>(12.2, "Circle4"),
-    //                                     std::make_shared<Oval>(12,34,"Oval4")};
+    std::shared_ptr<Shape> shapes4[]={std::make_shared<Circle>(12.2, "Circle4"),
+                                        std::make_shared<Oval>(12,34,"Oval4")};
 
-    // for (auto& s: shapes4)
-    //     s->draw();
+    for (auto& s: shapes4)
+        s->draw();
 
     
 
