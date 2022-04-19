@@ -8,7 +8,7 @@ class Feline: public Animal{
     public: 
         Feline() = default;
         Feline(std::string_view fur_style, std::string_view description);
-        ~Feline();
+        virtual ~Feline();
 
         virtual void run() const{
             std::cout << "Feline "<< m_description << " is running "<<std::endl;
