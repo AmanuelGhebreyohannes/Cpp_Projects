@@ -20,6 +20,10 @@ class Pigeon : public Bird
         virtual void breath()const override{
             std::cout << "Pigoen::breath called for : "<< m_description << std::endl;
         }
+
+         virtual void fly() const{
+            std::cout <<"Pigeon::fly() called for bird : " << m_description << std::endl;
+        }
 };
 
 #endif

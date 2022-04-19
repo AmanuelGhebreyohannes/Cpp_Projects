@@ -21,6 +21,9 @@ class Cat : public Feline
         virtual void breath()const override{
             std::cout << "Cat::breath called for : "<< m_description << std::endl;
         }
+        virtual void run() const{
+            std::cout << "Cat "<< m_description << " is running "<<std::endl;
+        }
 
 };
 
