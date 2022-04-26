@@ -4,7 +4,7 @@
 
 int main()
 {
-   //Shape * shape_ptr = new Shape();
+   //Shape * shape_ptr = new Shape(); // error since shape is abstract class
 
    const Shape * shape_rect = new Rectangle(10,10,"rect1");
    double surface = shape_rect->surface();
